@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:paddingTop="32dp">
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/ivItemImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:background="#F3F4F6"
+            android:layout_marginEnd="14dp"/>
+
+        <!-- Name + Price -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RM 0.00"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#E31E24"/>
+        </LinearLayout>
+
+        <!-- Arrow -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="›"
+            android:textSize="22sp"
+            android:textColor="#9CA3AF"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

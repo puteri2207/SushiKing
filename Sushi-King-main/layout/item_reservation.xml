@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="#16213E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingTop="32dp">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tvResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👤 Guest"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Date Time -->
+        <TextView
+            android:id="@+id/tvResDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 Date  🕐 Time"
+            android:textSize="13sp"
+            android:textColor="#9CA3AF"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Pax -->
+        <TextView
+            android:id="@+id/tvResPax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👥 2 pax"
+            android:textSize="13sp"
+            android:textColor="#9CA3AF"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Status + Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvResStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🕐 Pending"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#F97316"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓ Confirm"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="4dp"
+                app:backgroundTint="#22C55E"
+                app:cornerRadius="8dp"
+                android:visibility="gone"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍣 Done"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="4dp"
+                app:backgroundTint="#3B82F6"
+                app:cornerRadius="8dp"
+                android:visibility="gone"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNoShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✗ No Show"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="4dp"
+                app:backgroundTint="#EF4444"
+                app:cornerRadius="8dp"
+                android:visibility="gone"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReceipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧾 Receipt"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="4dp"
+                app:backgroundTint="#C9A96E"
+                app:cornerRadius="8dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

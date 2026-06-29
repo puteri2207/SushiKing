@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Image -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/ivDetailImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="#F3F4F6"/>
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="10dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:background="@drawable/bg_white_rounded"
+                android:padding="6dp"/>
+
+            <TextView
+                android:id="@+id/tvDetailType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="10dp"
+                android:text="Type"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="#E31E24"/>
+        </FrameLayout>
+
+        <!-- Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:id="@+id/tvDetailName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Item Name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1F2937"/>
+
+                <TextView
+                    android:id="@+id/tvDetailPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM 0.00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#E31E24"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvDetailDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="13sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="8dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F3F4F6" android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvDetailCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔥 0 kcal"
+                android:textSize="13sp"
+                android:textColor="#F97316"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:id="@+id/tvDetailIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Qty control -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quantity:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#1F2937"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMinus"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="-"
+                    android:padding="0dp"
+                    android:textSize="18sp"
+                    android:textColor="#1F2937"
+                    app:backgroundTint="#F3F4F6"
+                    app:cornerRadius="18dp"/>
+
+                <TextView
+                    android:id="@+id/tvQty"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1F2937"
+                    android:gravity="center"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPlus"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="+"
+                    android:padding="0dp"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#E31E24"
+                    app:cornerRadius="18dp"/>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddToOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to Order"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#E31E24"
+                app:cornerRadius="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E"
+    android:paddingTop="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingTop="32dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STAFF PORTAL"
+                    android:textSize="12sp"
+                    android:textColor="#C9A96E"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"/>
+
+                <TextView
+                    android:id="@+id/tvStaffName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello, Staff! 👔"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:textSize="12sp"
+                android:textColor="#1A1A2E"
+                app:backgroundTint="#C9A96E"
+                app:cornerRadius="20dp"/>
+        </LinearLayout>
+
+        <!-- Staff Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#16213E">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:text="👔"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_gold_rounded"
+                    android:layout_marginEnd="14dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStaffId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Staff ID: N/A"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:id="@+id/tvStaffRole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Staff"
+                        android:textSize="13sp"
+                        android:textColor="#C9A96E"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="● Active"
+                    android:textSize="13sp"
+                    android:textColor="#22C55E"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Quick Actions Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Actions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Grid Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnManageReservations"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#16213E">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📋" android:textSize="32sp" android:layout_marginBottom="6dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reservations" android:textSize="14sp" android:textStyle="bold" android:textColor="#FFFFFF" android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Manage Tables" android:textSize="11sp" android:textColor="#C9A96E" android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnViewMenu"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#16213E">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🍣" android:textSize="32sp" android:layout_marginBottom="6dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Menu" android:textSize="14sp" android:textStyle="bold" android:textColor="#FFFFFF" android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="View Items" android:textSize="11sp" android:textColor="#C9A96E" android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Grid Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnStaffProfile"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#16213E">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👤" android:textSize="32sp" android:layout_marginBottom="6dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="My Profile" android:textSize="14sp" android:textStyle="bold" android:textColor="#FFFFFF" android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Staff Info" android:textSize="11sp" android:textColor="#C9A96E" android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnAnnouncements"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#16213E">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📢" android:textSize="32sp" android:layout_marginBottom="6dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Announcements" android:textSize="14sp" android:textStyle="bold" android:textColor="#FFFFFF" android:gravity="center"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Notices" android:textSize="11sp" android:textColor="#C9A96E" android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Today's Reservations -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Reservations"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#16213E">
+
+            <LinearLayout
+                android:id="@+id/reservationsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading reservations..."
+                    android:textSize="14sp"
+                    android:textColor="#9CA3AF"
+                    android:gravity="center"
+                    android:padding="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="28dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E31E24"
+            android:padding="20dp"
+            android:paddingBottom="32dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Konnichiwa,"
+                        android:textSize="13sp"
+                        android:textColor="#FFCCCC"/>
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loading... 👋"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🍣 Sushi King Member"
+                        android:textSize="11sp"
+                        android:textColor="#FFAAAA"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+
+                <!-- Avatar -->
+                <TextView
+                    android:id="@+id/tvAvatar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="?"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#E31E24"
+                    android:gravity="center"
+                    android:background="@drawable/bg_white_rounded"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Member Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Member QR"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#1F2937"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Show to cashier at any outlet"
+                        android:textSize="12sp"
+                        android:textColor="#6B7280"/>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnShowQr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHOW QR"
+                    android:textColor="#1F2937"
+                    android:textSize="12sp"
+                    app:backgroundTint="#C9A96E"
+                    app:cornerRadius="10dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Quick Access Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Access"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Quick Access Grid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMenu"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#E31E24">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🍣" android:textSize="26sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Menu" android:textSize="12sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPromos"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#064E3B">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎉" android:textSize="26sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Promos" android:textSize="12sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardReservation"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#1E3A5F">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📅" android:textSize="26sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reserve" android:textSize="12sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Latest Promotions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest Promotions"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#064E3B">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LEAVING SOON" android:textSize="10sp" android:textColor="#6EE7B7" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌙 Buffet Puasa Yang Puas-puas" android:textSize="16sp" android:textStyle="bold" android:textColor="#FFFFFF" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9th – 15th March  •  40+ varieties" android:textSize="12sp" android:textColor="#A7F3D0"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#E31E24">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ONGOING" android:textSize="10sp" android:textColor="#FFCCCC" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🥡 20% Off Takeaway" android:textSize="16sp" android:textStyle="bold" android:textColor="#FFFFFF" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="19 Feb – 20 March  •  Mon–Fri 3pm–6pm" android:textSize="12sp" android:textColor="#FFCCCC"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

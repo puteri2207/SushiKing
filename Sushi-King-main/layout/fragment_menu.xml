@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8F0">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E31E24"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Menu 🍣"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/InputField"
+            app:boxBackgroundColor="#FFFFFF"
+            android:hint="Search menu...">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#1F2937"
+                android:textSize="14sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Level 1: Main Category Chips -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:elevation="4dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍽 All"
+                android:checked="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSushi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍣 Sushi"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBeverages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🥤 Beverages"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipDesserts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍰 Desserts"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <!-- Level 2: Sushi Type Chips (only visible when Sushi selected) -->
+    <HorizontalScrollView
+        android:id="@+id/scrollSushiTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF0F0"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:visibility="gone">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupSushiType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSushiAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Sushi"
+                android:checked="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sashimi"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nigiri"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gunkan"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maki"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volcano"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temaki"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special Sushi"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tsumami"
+                style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <!-- Loading -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="#E31E24"
+        android:visibility="gone"/>
+
+    <!-- Empty -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No items found"
+        android:textSize="14sp"
+        android:textColor="#6B7280"
+        android:gravity="center"
+        android:padding="32dp"
+        android:visibility="gone"/>
+
+    <!-- List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

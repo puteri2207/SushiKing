@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="32dp">
+
+        <!-- Status color bar -->
+        <View
+            android:id="@+id/statusBar"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:background="#F97316"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <!-- Status + ID -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tvResStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🕐 Pending"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#F97316"/>
+
+                <TextView
+                    android:id="@+id/tvResId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID: ABC123"
+                    android:textSize="10sp"
+                    android:textColor="#9CA3AF"
+                    android:background="#F3F4F6"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"/>
+            </LinearLayout>
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/tvResDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Date"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Time + Pax -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvResTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🕐 Time"
+                    android:textSize="13sp"
+                    android:textColor="#6B7280"/>
+
+                <TextView
+                    android:id="@+id/tvResPax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👥 2 pax"
+                    android:textSize="13sp"
+                    android:textColor="#6B7280"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

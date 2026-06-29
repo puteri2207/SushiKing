@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sushi King</string>
+    <string name="welcome">Welcome to Sushi King!</string>
+    <string name="konnichiwa">Konnichiwa</string>
+    <string name="login_as_customer">Login as Customer</string>
+    <string name="login_as_staff">Login as Staff</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="staff_id">Staff ID</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="dont_have_account">Don\'t have an account? Sign Up</string>
+    <string name="already_have_account">Already have an account? Sign In</string>
+    <string name="smile_points">Smile Points</string>
+    <string name="show_qr">Show QR</string>
+    <string name="promotions">Promotions</string>
+    <string name="rewards">Rewards</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="reservation">Reservation</string>
+    <string name="menu">Menu</string>
+    <string name="make_reservation">Make Reservation</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="no_of_pax">No. of Pax</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="learn_more">Learn More</string>
+    <string name="spend_minimum">Spend a minimum of RM60 to get one (1) stamp!</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="store_locator">Store Locator</string>
+    <string name="order_now">Order Now</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="faq">FAQ</string>
+    <string name="other_info">Other Info</string>
+    <string name="staff_dashboard">Staff Dashboard</string>
+    <string name="manage_reservations">Manage Reservations</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="logout">Logout</string>
+</resources>

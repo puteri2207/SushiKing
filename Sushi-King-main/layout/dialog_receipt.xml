@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E31E24"
+            android:padding="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧾"
+                android:textSize="32sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Digital Receipt"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tvReceiptId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#ABC12345"
+                android:textSize="13sp"
+                android:textColor="#FFCCCC"/>
+        </LinearLayout>
+
+        <!-- Receipt Body -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Customer Info -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="6dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Customer" android:textSize="12sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvReceiptName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textSize="12sp" android:textStyle="bold" android:textColor="#1F2937"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="6dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Date" android:textSize="12sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvReceiptDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textSize="12sp" android:textStyle="bold" android:textColor="#1F2937"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="6dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Time" android:textSize="12sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvReceiptTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textSize="12sp" android:textStyle="bold" android:textColor="#1F2937"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="6dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Pax" android:textSize="12sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvReceiptPax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textSize="12sp" android:textStyle="bold" android:textColor="#1F2937"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="6dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Status" android:textSize="12sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvReceiptStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textSize="12sp" android:textStyle="bold" android:textColor="#22C55E"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Payment" android:textSize="12sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvReceiptPayment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Card" android:textSize="12sp" android:textStyle="bold" android:textColor="#1F2937"/>
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E5E7EB" android:layout_marginBottom="12dp"/>
+
+            <!-- Order Items -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pre-ordered Items" android:textSize="13sp" android:textStyle="bold" android:textColor="#1F2937" android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/llOrderItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Divider -->
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E5E7EB" android:layout_marginBottom="12dp"/>
+
+            <!-- Payment Summary -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="4dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Deposit" android:textSize="12sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvReceiptDeposit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RM20.00" android:textSize="12sp" android:textColor="#1F2937"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Food Total" android:textSize="12sp" android:textColor="#6B7280"/>
+                <TextView android:id="@+id/tvReceiptFoodTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RM0.00" android:textSize="12sp" android:textColor="#1F2937"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="16dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="TOTAL PAID" android:textSize="15sp" android:textStyle="bold" android:textColor="#1F2937"/>
+                <TextView android:id="@+id/tvReceiptTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RM20.00" android:textSize="15sp" android:textStyle="bold" android:textColor="#E31E24"/>
+            </LinearLayout>
+
+            <!-- Thank you -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍣 Thank you for dining with us!\nSushi King Malaysia"
+                android:textSize="12sp"
+                android:textColor="#9CA3AF"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCloseReceipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#E31E24"
+                app:cornerRadius="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

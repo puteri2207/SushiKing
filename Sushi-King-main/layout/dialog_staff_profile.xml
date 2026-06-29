@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1A1A2E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#16213E"
+            android:padding="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAvatar"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:text="S"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A2E"
+                android:gravity="center"
+                android:background="@drawable/bg_gold_rounded"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Staff Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role"
+                android:textSize="13sp"
+                android:textColor="#1A1A2E"
+                android:background="#C9A96E"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"/>
+        </LinearLayout>
+
+        <!-- Info list -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- First Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:background="#16213E"
+                android:layout_marginBottom="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👤" android:textSize="18sp" android:layout_marginEnd="12dp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="First Name" android:textSize="11sp" android:textColor="#9CA3AF"/>
+                    <TextView android:id="@+id/tvFirstName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textSize="15sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Last Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:background="#16213E"
+                android:layout_marginBottom="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👤" android:textSize="18sp" android:layout_marginEnd="12dp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Last Name" android:textSize="11sp" android:textColor="#9CA3AF"/>
+                    <TextView android:id="@+id/tvLastName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textSize="15sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Staff ID -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:background="#16213E"
+                android:layout_marginBottom="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🪪" android:textSize="18sp" android:layout_marginEnd="12dp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Staff ID" android:textSize="11sp" android:textColor="#9CA3AF"/>
+                    <TextView android:id="@+id/tvStaffIdDialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textSize="15sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Phone -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:background="#16213E"
+                android:layout_marginBottom="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📱" android:textSize="18sp" android:layout_marginEnd="12dp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phone Number" android:textSize="11sp" android:textColor="#9CA3AF"/>
+                    <TextView android:id="@+id/tvPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textSize="15sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:background="#16213E">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📧" android:textSize="18sp" android:layout_marginEnd="12dp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email" android:textSize="11sp" android:textColor="#9CA3AF"/>
+                    <TextView android:id="@+id/tvEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textSize="15sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingTop="32dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Promotions 🎉"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exclusive deals for Sushi King members"
+            android:textSize="13sp"
+            android:textColor="#6B7280"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Claim notice banner -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#FEF3C7">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📍"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To claim any promotion, please present your member QR code to the cashier at your nearest Sushi King outlet."
+                    android:textSize="12sp"
+                    android:textColor="#92400E"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- PROMO 1 - Buffet Puasa -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#064E3B">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LEAVING SOON"
+                        android:textSize="10sp"
+                        android:textColor="#6EE7B7"
+                        android:textStyle="bold"
+                        android:background="#065F46"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌙 Buffet Puasa Yang Puas-puas"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9th – 15th March  •  40+ varieties"
+                        android:textSize="12sp"
+                        android:textColor="#A7F3D0"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berbuka with us! Enjoy 40+ varieties of sushi at one flat price. Every pax gets FREE Miso Soup, Karaage (3pcs), and Refillable Green Tea!"
+                        android:textSize="12sp"
+                        android:textColor="#D1FAE5"/>
+                </LinearLayout>
+                <!-- Claim footer -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#052E1E"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏪"
+                        android:textSize="13sp"
+                        android:layout_marginEnd="6dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Claim at nearest Sushi King outlet. Show QR to cashier."
+                        android:textSize="11sp"
+                        android:textColor="#6EE7B7"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- PROMO 2 - 20% Off Takeaway -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#E31E24">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONGOING"
+                        android:textSize="10sp"
+                        android:textColor="#FCA5A5"
+                        android:textStyle="bold"
+                        android:background="#B91C1C"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🥡 20% Off Takeaway"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19 Feb – 20 March  •  Mon–Fri 3pm–6pm"
+                        android:textSize="12sp"
+                        android:textColor="#FECACA"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enjoy exclusive member rates on our entire takeaway menu when you order in-store during promotion hours."
+                        android:textSize="12sp"
+                        android:textColor="#FEE2E2"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#B91C1C"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏪"
+                        android:textSize="13sp"
+                        android:layout_marginEnd="6dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Claim at nearest Sushi King outlet. Show QR to cashier."
+                        android:textSize="11sp"
+                        android:textColor="#FECACA"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- PROMO 3 - All Day Value Meals -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#C9A96E">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ONGOING"
+                        android:textSize="10sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:background="#92400E"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🍱 All-Day Value Meals RM14.90"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#1F2937"
+                        android:layout_marginBottom="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available Daily  •  While stocks last"
+                        android:textSize="12sp"
+                        android:textColor="#44403C"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All 5 value meal options come with a COMPLIMENTARY Shizuoka Cha! Perfect for a quick satisfying meal anytime."
+                        android:textSize="12sp"
+                        android:textColor="#292524"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#92400E"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏪"
+                        android:textSize="13sp"
+                        android:layout_marginEnd="6dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Claim at nearest Sushi King outlet. Show QR to cashier."
+                        android:textSize="11sp"
+                        android:textColor="#FEF3C7"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- PROMO 4 - Birthday -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#1E3A5F">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MEMBERS ONLY"
+                        android:textSize="10sp"
+                        android:textColor="#93C5FD"
+                        android:textStyle="bold"
+                        android:background="#1E40AF"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🎂 Birthday Free Cake Slice"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your birthday month  •  Dine-in only"
+                        android:textSize="12sp"
+                        android:textColor="#BFDBFE"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Show your member QR during your birthday month to enjoy a complimentary cake slice. Valid for dine-in only, once per month."
+                        android:textSize="12sp"
+                        android:textColor="#DBEAFE"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#1E40AF"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏪"
+                        android:textSize="13sp"
+                        android:layout_marginEnd="6dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Claim at nearest Sushi King outlet. Show QR to cashier."
+                        android:textSize="11sp"
+                        android:textColor="#BFDBFE"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- PROMO 5 - Stamp Reward -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#4A1942">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STAMP REWARD"
+                        android:textSize="10sp"
+                        android:textColor="#F0ABFC"
+                        android:textStyle="bold"
+                        android:background="#6B21A8"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🍣 Collect 8 Stamps = Free Bento!"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ongoing  •  Members only"
+                        android:textSize="12sp"
+                        android:textColor="#E9D5FF"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dine with us and collect stamps! Every visit earns you 1 stamp. Collect 8 stamps and redeem a FREE Chicken Bento Set worth RM18.90!"
+                        android:textSize="12sp"
+                        android:textColor="#F3E8FF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#6B21A8"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏪"
+                        android:textSize="13sp"
+                        android:layout_marginEnd="6dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Claim at nearest Sushi King outlet. Show QR to cashier."
+                        android:textSize="11sp"
+                        android:textColor="#E9D5FF"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- PROMO 6 - Weekend Family -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#065F46">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WEEKEND SPECIAL"
+                        android:textSize="10sp"
+                        android:textColor="#6EE7B7"
+                        android:textStyle="bold"
+                        android:background="#064E3B"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👨‍👩‍👧 Family Weekend Bundle"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sat &amp; Sun  •  Min 4 pax"
+                        android:textSize="12sp"
+                        android:textColor="#A7F3D0"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Groups of 4 or more get 1 FREE kids meal and complimentary mochi ice cream for each child (12 years and below)."
+                        android:textSize="12sp"
+                        android:textColor="#D1FAE5"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#064E3B"
+                    android:padding="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏪"
+                        android:textSize="13sp"
+                        android:layout_marginEnd="6dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Claim at nearest Sushi King outlet. Show QR to cashier."
+                        android:textSize="11sp"
+                        android:textColor="#A7F3D0"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
